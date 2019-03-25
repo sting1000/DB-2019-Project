@@ -70,10 +70,10 @@ public class ColumnarVec {
         ColumnStoreData = new ColumnStore(schema, "input/data.csv", ",");
         ColumnStoreData.load();
         
-        ColumnStoreOrder = new ColumnStore(orderSchema, "input/orders_big.csv", "\\|");
+        ColumnStoreOrder = new ColumnStore(orderSchema, "input/orders_small.csv", "\\|");
         ColumnStoreOrder.load();
         
-        ColumnStoreLineItem = new ColumnStore(lineitemSchema, "input/lineitem_big.csv", "\\|");
+        ColumnStoreLineItem = new ColumnStore(lineitemSchema, "input/lineitem_small.csv", "\\|");
         ColumnStoreLineItem.load();        
     }
     

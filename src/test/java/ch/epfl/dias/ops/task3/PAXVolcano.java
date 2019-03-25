@@ -71,10 +71,10 @@ public class PAXVolcano {
         PAXStoreData = new PAXStore(schema, "input/data.csv", ",", 5);
         PAXStoreData.load();
         
-        PAXStoreOrder = new PAXStore(orderSchema, "input/orders_big.csv", "\\|", 4);
+        PAXStoreOrder = new PAXStore(orderSchema, "input/orders_small.csv", "\\|", 4);
         PAXStoreOrder.load();
         
-        PAXStoreLineItem = new PAXStore(lineitemSchema, "input/lineitem_big.csv", "\\|", 3);
+        PAXStoreLineItem = new PAXStore(lineitemSchema, "input/lineitem_small.csv", "\\|", 3);
         PAXStoreLineItem.load();        
     }
     

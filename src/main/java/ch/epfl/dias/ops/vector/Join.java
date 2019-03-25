@@ -20,8 +20,9 @@ public class Join implements VectorOperator {
 	private DataType[] type_re;
 	private ArrayList<DBColumn[]> col_left;
 	private int table_index = 0;
-	private int  lf_cols_len;
+	private int  lf_cols_len, vectorsize;
 	private int  currentpos=0;
+	DBColumn[] rg_cols, result;
 
 
 	public Join(VectorOperator leftChild, VectorOperator rightChild, int leftFieldNo, int rightFieldNo) {
@@ -44,21 +45,22 @@ public class Join implements VectorOperator {
 			buildHashTable(lf_cols[leftFieldNo]);
 			lf_cols = leftChild.next();
 		}while (lf_cols != null);
-	}
+		rg_cols = rightChild.next();
 
-	@Override
-	public DBColumn[] next() {
-		DBColumn[] rg_cols = rightChild.next();
-		if (rg_cols == null){return null;}
-		int vectorsize =  rg_cols[rightFieldNo].fields.length;
+		vectorsize =  rg_cols[rightFieldNo].fields.length;
 		type_re = new DataType[lf_cols_len + rg_cols.length];
 		field_re = new ArrayList[lf_cols_len + rg_cols.length];
-		DBColumn[] result = new DBColumn[lf_cols_len + rg_cols.length];
+		result = new DBColumn[lf_cols_len + rg_cols.length];
 
 		//initial field array
 		for (int i = 0; i < result.length; i++ ){
 			field_re[i] = new ArrayList<Object>();
 		}
+	}
+
+	@Override
+	public DBColumn[] next() {
+		if (currentpos != 0 && currentpos == field_re[0].size()){return null;}
 		while (rg_cols != null) {
 			int index_right = 0;
 			for (Object t2 : rg_cols[rightFieldNo].fields) {
@@ -91,21 +93,22 @@ public class Join implements VectorOperator {
 			rg_cols = rightChild.next();
 		}
 
-		if (field_re[0].size() - currentpos > vectorsize) {
+		if (field_re[0].size() - currentpos >= vectorsize) {
 			for (int i = 0; i < result.length; i++) {
 				Object[] field = field_re[i].subList(currentpos, currentpos+vectorsize).toArray(new Object[0]);
 				result[i] = new DBColumn(field, new DataType[]{type_re[i]});
-				currentpos += vectorsize;
 			}
+			currentpos += vectorsize;
 			return result;
 		}
 
 		if (field_re[0].size() - currentpos > 0) {
 			for (int i = 0; i < result.length; i++) {
-				Object[] field = field_re[i].subList(currentpos, field_re[0].size()-1).toArray(new Object[0]);
+				Object[] field = field_re[i].subList(currentpos, field_re[0].size()).toArray(new Object[0]);
 				result[i] = new DBColumn(field, new DataType[]{type_re[i]});
-				currentpos = field_re[0].size()-1;
+
 			}
+			currentpos += field_re[0].size();
 			return result;
 		}
 

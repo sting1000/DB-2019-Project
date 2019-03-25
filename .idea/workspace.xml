@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="57447f27-b633-40dd-8de1-534405954390" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/vector/Join.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/vector/Join.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/volcano/ProjectAggregate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/volcano/ProjectAggregate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/PAX/PAXStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/PAX/PAXStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/column/ColumnStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/column/ColumnStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/row/RowStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/row/RowStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/ColumnarBck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/ColumnarBck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/ColumnarVec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/ColumnarVec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/PAXVolcano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/PAXVolcano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/RowVolcano.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/RowVolcano.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/vector/VectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/vector/VectorTest.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/vector/VectorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/volcano/VolcanoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1123">
+              <caret line="98" column="139" selection-start-line="98" selection-start-column="139" selection-end-line="98" selection-end-column="139" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/RowVolcano.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="76" column="77" selection-start-line="76" selection-start-column="77" selection-end-line="76" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/PAXVolcano.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="960">
+              <caret line="76" column="77" selection-start-line="76" selection-start-column="77" selection-end-line="76" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/volcano/ProjectAggregate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="45" column="45" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/vector/ProjectAggregate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-124">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/block/ProjectAggregate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-269">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/row/DBTuple.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/row/RowStore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/columnar/ColumnarTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/ColumnarVec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/vector/Join.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/ColumnarBck.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/RowVolcano.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/PAXVolcano.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/vector/VectorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/column/ColumnStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/PAX/PAXStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/row/RowStore.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/volcano/VolcanoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/volcano/ProjectAggregate.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dias" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dias" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dias" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+              <item name="block" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dias" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+              <item name="vector" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dias" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+              <item name="volcano" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dias" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+              <item name="columnar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+              <item name="task3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+              <item name="vector" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs422-project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DB-2019-Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ops" type="462c0819:PsiDirectoryNode" />
+              <item name="volcano" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553549615502" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.PAXVolcano">
+    <configuration name="PAXVolcano" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cs422-project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.epfl.dias.ops.task3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.epfl.dias.ops.task3" />
+      <option name="MAIN_CLASS_NAME" value="ch.epfl.dias.ops.task3.PAXVolcano" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RowVolcano" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cs422-project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.epfl.dias.ops.task3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.epfl.dias.ops.task3" />
+      <option name="MAIN_CLASS_NAME" value="ch.epfl.dias.ops.task3.RowVolcano" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VectorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cs422-project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.epfl.dias.ops.vector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.epfl.dias.ops.vector" />
+      <option name="MAIN_CLASS_NAME" value="ch.epfl.dias.ops.vector.VectorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VolcanoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cs422-project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.epfl.dias.ops.volcano.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.epfl.dias.ops.volcano" />
+      <option name="MAIN_CLASS_NAME" value="ch.epfl.dias.ops.volcano.VolcanoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VolcanoTest.spTestOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cs422-project1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.epfl.dias.ops.volcano.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.epfl.dias.ops.volcano" />
+      <option name="MAIN_CLASS_NAME" value="ch.epfl.dias.ops.volcano.VolcanoTest" />
+      <option name="METHOD_NAME" value="spTestOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PAXVolcano" />
+        <item itemvalue="JUnit.RowVolcano" />
+        <item itemvalue="JUnit.VolcanoTest.spTestOrder" />
+        <item itemvalue="JUnit.VolcanoTest" />
+        <item itemvalue="JUnit.VectorTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57447f27-b633-40dd-8de1-534405954390" name="Default Changelist" comment="" />
+      <created>1553539600168</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553539600168</updated>
+      <workItem from="1553539601446" duration="6461000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ColumnarTest - 2019.03.25 at 22h 26m 48s.xml">
+      <configuration name="ColumnarTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VectorTest - 2019.03.25 at 22h 26m 57s.xml">
+      <configuration name="VectorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VolcanoTest - 2019.03.25 at 22h 27m 04s.xml">
+      <configuration name="VolcanoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VolcanoTest_spTestOrder - 2019.03.25 at 22h 28m 50s.xml">
+      <configuration name="VolcanoTest.spTestOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VolcanoTest_spTestOrder - 2019.03.25 at 22h 28m 56s.xml">
+      <configuration name="VolcanoTest.spTestOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VolcanoTest_spTestOrder - 2019.03.25 at 22h 29m 06s.xml">
+      <configuration name="VolcanoTest.spTestOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VolcanoTest_spTestOrder - 2019.03.25 at 22h 30m 42s.xml">
+      <configuration name="VolcanoTest.spTestOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VolcanoTest_spTestOrder - 2019.03.25 at 22h 33m 12s.xml">
+      <configuration name="VolcanoTest.spTestOrder" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RowVolcano - 2019.03.25 at 22h 33m 24s.xml">
+      <configuration name="RowVolcano" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PAXVolcano - 2019.03.25 at 22h 33m 29s.xml">
+      <configuration name="PAXVolcano" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6461000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3299363" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Theme Preview" order="0" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/ColumnarVec.java</url>
+          <line>216</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/row/DBTuple.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/row/DBTuple.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/input/orders_small.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input/lineitem_small.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/vector/Scan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/vector/Join.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="106" column="83" selection-start-line="106" selection-start-column="83" selection-end-line="106" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/ColumnarVec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2957">
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/ColumnarBck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="74" column="83" selection-start-line="74" selection-start-column="83" selection-end-line="74" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/column/DBColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/column/ColumnStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="51" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/PAX/DBPAXpage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/PAX/PAXStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/Store.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/row/RowStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/columnar/ColumnarTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/vector/VectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="61" column="30" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/store/row/DBTuple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/volcano/ProjectAggregate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="45" column="45" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/vector/ProjectAggregate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ch/epfl/dias/ops/block/ProjectAggregate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-269">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/volcano/VolcanoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1123">
+          <caret line="98" column="139" selection-start-line="98" selection-start-column="139" selection-end-line="98" selection-end-column="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/RowVolcano.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="76" column="77" selection-start-line="76" selection-start-column="77" selection-end-line="76" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ch/epfl/dias/ops/task3/PAXVolcano.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="76" column="77" selection-start-line="76" selection-start-column="77" selection-end-line="76" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

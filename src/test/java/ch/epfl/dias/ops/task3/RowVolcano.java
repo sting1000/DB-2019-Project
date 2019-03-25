@@ -71,10 +71,10 @@ public class RowVolcano {
         rowstoreData = new RowStore(schema, "input/data.csv", ",");
         rowstoreData.load();
         
-        rowstoreOrder = new RowStore(orderSchema, "input/orders_big.csv", "\\|");
+        rowstoreOrder = new RowStore(orderSchema, "input/orders_small.csv", "\\|");
         rowstoreOrder.load();
         
-        rowstoreLineItem = new RowStore(lineitemSchema, "input/lineitem_big.csv", "\\|");
+        rowstoreLineItem = new RowStore(lineitemSchema, "input/lineitem_small.csv", "\\|");
         rowstoreLineItem.load();        
     }
     

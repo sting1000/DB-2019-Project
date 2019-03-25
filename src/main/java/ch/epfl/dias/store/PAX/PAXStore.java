@@ -34,29 +34,33 @@ public class PAXStore extends Store {
 
 	@Override
 	public void load() throws IOException{
-		List<String> lines = Files.readAllLines(Paths.get(filename), StandardCharsets.UTF_8);
-		this.height = lines.size();
-		pages = new DBPAXpage[(int) Math.ceil((double)height/(double)tuplesPerPage)];
+		try {
+			List<String> lines = Files.readAllLines(Paths.get(filename), StandardCharsets.UTF_8);
+			this.height = lines.size();
+			pages = new DBPAXpage[(int) Math.ceil((double) height / (double) tuplesPerPage)];
 
-		int tupleCount = 0;
-		int pageNum = 0;
-		String[] fields = new String[tuplesPerPage * width];
-		for (String line : lines) {
-			tupleCount = tupleCount + 1;
-			int itemCount = 0;
-			for (String item : line.split(delimiter)) {
-				fields[tupleCount-1  + itemCount * tuplesPerPage] =  item;
-				itemCount = itemCount +1;
-			}
-			if (tupleCount % tuplesPerPage == 0){
+			int tupleCount = 0;
+			int pageNum = 0;
+			String[] fields = new String[tuplesPerPage * width];
+			for (String line : lines) {
+				tupleCount = tupleCount + 1;
+				int itemCount = 0;
+				for (String item : line.split(delimiter)) {
+					fields[tupleCount - 1 + itemCount * tuplesPerPage] = item;
+					itemCount = itemCount + 1;
+				}
+				if (tupleCount % tuplesPerPage == 0) {
+					pages[pageNum] = new DBPAXpage(fields, schema);
+					fields = new String[tuplesPerPage * width];
+					tupleCount = 0;
+					pageNum = pageNum + 1;
+					continue;
+				}
 				pages[pageNum] = new DBPAXpage(fields, schema);
-				fields = new String[tuplesPerPage * width];
-				tupleCount = 0;
-				pageNum = pageNum + 1;
-				continue;
 			}
-			pages[pageNum] = new DBPAXpage(fields, schema);
-		}
+		}catch (IOException e){
+		System.err.println(e);
+	}
 	}
 
 	@Override

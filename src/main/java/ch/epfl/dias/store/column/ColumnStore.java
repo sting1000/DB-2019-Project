@@ -34,17 +34,21 @@ public class ColumnStore extends Store {
 
 	@Override
 	public void load() throws IOException{
-		List<String> lines = Files.readAllLines(Paths.get(filename), StandardCharsets.UTF_8);
-		this.height = lines.size();
-		fields = new String[height * width];
-		int tupleCount = 0;
-		for (String line : lines) {
-			int itemCount = 0;
-			for (String item : line.split(delimiter)) {
-				fields[tupleCount  + itemCount * height] =  item;
-				itemCount = itemCount +1;
+		try {
+			List<String> lines = Files.readAllLines(Paths.get(filename), StandardCharsets.UTF_8);
+			this.height = lines.size();
+			fields = new String[height * width];
+			int tupleCount = 0;
+			for (String line : lines) {
+				int itemCount = 0;
+				for (String item : line.split(delimiter)) {
+					fields[tupleCount + itemCount * height] = item;
+					itemCount = itemCount + 1;
+				}
+				tupleCount = tupleCount + 1;
 			}
-			tupleCount = tupleCount + 1;
+		}catch (IOException e){
+			System.err.println(e);
 		}
 
 	}

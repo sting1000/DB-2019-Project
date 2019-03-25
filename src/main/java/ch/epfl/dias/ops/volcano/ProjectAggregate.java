@@ -43,7 +43,7 @@ public class ProjectAggregate implements VolcanoOperator {
 			case COUNT:
 				double count = 0;
 				while(!tuple.eof){
-					if (tuple.getFieldAsDouble(fieldNo) != null) {
+					if (tuple.fields[fieldNo] != null) {
 						count = count + 1;
 					}
 					tuple = child.next();

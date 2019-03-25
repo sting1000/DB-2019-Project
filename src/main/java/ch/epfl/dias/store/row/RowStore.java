@@ -30,16 +30,18 @@ public class RowStore extends Store  {
 
 	@Override
 	public void load() throws IOException{
-//		List<String> t = Files.readAllLines(Paths.get(filename), StandardCharsets.UTF_8);
-		List<String> lines = Files.readAllLines(Paths.get(filename), StandardCharsets.UTF_8);
-		fields = new ArrayList<>();
-		int height = 0;
-		for(String line : lines){
-			height  = height + 1;
-			fields.addAll(Arrays.asList(line.split(delimiter)));
+		try {
+			List<String> lines = Files.readAllLines(Paths.get(filename), StandardCharsets.UTF_8);
+			fields = new ArrayList<>();
+			int height = 0;
+			for (String line : lines) {
+				height = height + 1;
+				fields.addAll(Arrays.asList(line.split(delimiter)));
+			}
+			this.height = height;
+		}catch (IOException e){
+			System.err.println(e);
 		}
-		this.height = height ;
-
 	}
 
 	@Override
